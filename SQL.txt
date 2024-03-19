@@ -1,0 +1,34 @@
+CREATE DATABASE STUDENT;
+
+USE STUDENT;
+
+-- Create the student table
+
+CREATE TABLE student (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    class INT,
+    section CHAR(1),
+    stream VARCHAR(20),
+    email VARCHAR(100),
+    phone_no VARCHAR(15)
+);
+
+-- Insert sample data into the student table
+
+INSERT INTO student (student_id, name, class, section, stream, email, phone_no) VALUES
+(1, 'John Doe', 10, 'A', 'Science', 'john.doe@example.com', '123-456-7890'),
+(2, 'Jane Smith', 11, 'B', 'Commerce', 'jane.smith@example.com', '987-654-3210'),
+(3, 'Alice Johnson', 9, 'C', 'Arts', 'alice.johnson@example.com', '555-123-4567'),
+(4, 'Michael Johnson', 12, 'A', 'Science', 'michael.johnson@example.com', '555-987-6543'),
+(5, 'Emily Brown', 10, 'B', 'Commerce', 'emily.brown@example.com', '111-222-3333'),
+(6, 'Daniel Wilson', 11, 'C', 'Arts', 'daniel.wilson@example.com', '444-555-6666'),
+(7, 'Sophia Martinez', 9, 'D', 'Science', 'sophia.martinez@example.com', '777-888-9999'),
+(8, 'Matthew Taylor', 12, 'A', 'Commerce', 'matthew.taylor@example.com', '123-456-7890'),
+(9, 'Olivia Anderson', 11, 'B', 'Arts', 'olivia.anderson@example.com', '987-654-3210'),
+(10, 'William Thomas', 10, 'C', 'Science', 'william.thomas@example.com', '555-123-4567'),
+(11, 'Ava Garcia', 9, 'D', 'Commerce', 'ava.garcia@example.com', '555-555-5555'),
+(12, 'James Hernandez', 12, 'A', 'Arts', 'james.hernandez@example.com', '555-666-7777'),
+(13, 'Isabella Young', 11, 'B', 'Science', 'isabella.young@example.com', '555-777-8888'),
+(14, 'Benjamin Allen', 10, 'C', 'Commerce', 'benjamin.allen@example.com', '555-888-9999'),
+(15, 'Mia Lopez', 9, 'D', 'Arts', 'mia.lopez@example.com', '555-999-0000');
